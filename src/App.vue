@@ -1,13 +1,13 @@
 <template>
   <div>
-    <PhoneInput :phoneNumber="phoneNumber" :countryCodeName="countryCodeName" @changed="changed" />
+    <PhoneInputVuejs :phoneNumber="phoneNumber" :countryCodeName="countryCodeName" @changed="changed" />
   </div>
 </template>
 
 
 <script setup>
 import { ref } from 'vue'
-import PhoneInput from './components/PhoneInput.vue'
+import PhoneInputVuejs from './components/PhoneInputVuejs.vue'
 
 const phoneNumber = ref('')
 const countryCodeName = ref('EG')

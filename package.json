@@ -1,8 +1,16 @@
 {
   "name": "phone-input-vuejs",
-  "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
+  "main": "./dist/phone-input-vuejs.umd.js",
+  "module": "./dist/phone-input-vuejs.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/phone-input-vuejs.es.js",
+      "require": "./dist/phone-input-vuejs.umd.js"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
